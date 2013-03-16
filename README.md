@@ -11,7 +11,7 @@ Download jasmine-requirejs.js from [here](https://raw.github.com/kn/jasmine-requ
 Defines a suite of requirejs module specifications. This wraps a Jasmine describe block inside a require statement so that all dependencies are fullfilled before each spec. The loaded module is available as this.Module. For example:
 
 ```
-describe('app/modules/example.js', function() {
+describeModule('app/modules/example.js', function() {
   it("loads the module as this.Module", function() {
     expect(this.Module).toBeDefined();
   });
